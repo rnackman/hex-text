@@ -1,11 +1,11 @@
 function hexifyText(input) {
-  var string = input.replace(/ +/g, '');
+  var string = input;
   var converted_string = '';
 
   for (var i = 0; i < string.length; i++) {
     converted_string += string.charCodeAt(i).toString(16);
   }
-
+  debugger;
   var hex_array = converted_string.match(/.{1,6}/g);
 
   hex_array.forEach(makeSix);
