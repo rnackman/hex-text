@@ -1,20 +1,19 @@
 function hexifyText(input) {
   var characters = input.toUpperCase().replace(/ +/g, '').split('');
-  var converted_characters = [];
+  var converted_string = '';
 
   for (var i = 0; i < characters.length; i++) {
     if (isNaN(characters[i])){
       if (characters[i].match(/[A-F]/)){
-        converted_characters.push(characters[i]);
+        converted_string += characters[i];
       } else {
-        converted_characters.push(convertCharacter(characters[i]));
+        converted_string += convertCharacter(characters[i]);
       }
     } else {
-      converted_characters.push(characters[i]);
+      converted_string += characters[i];
     }
   }
 
-  var converted_string = converted_characters.join('');
   var hex_array = converted_string.match(/.{1,6}/g);
 
   hex_array.forEach(makeSix);
