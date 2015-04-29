@@ -1,0 +1,30 @@
+h1 {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.form {
+  padding: 5%;
+  text-align: center;
+}
+
+.form-control:focus {
+  
+}
+
+.input-group {
+  width: 50%;
+  margin: auto;
+}
+
+.color-div {
+  height: 5000px;
+  display: inline-block;
+}
+
+.btn-default {
+  background-color: white;
+  border-color: black;
+  color: black;
+}
+
